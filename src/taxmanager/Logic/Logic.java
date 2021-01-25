@@ -69,5 +69,39 @@ public class Logic {
 
     }
 
-    
+     public String sum_Perum (ModelProgram modelprogram){
+            if (modelprogram.getYear() < 5)
+            {
+            ModelProgram cac = new Calculation();
+            double sum_perum = cac.calculate(modelprogram.getOmzet(), fin);
+            String total = "Rp" + sum_perum;
+            return total;
+            }
+            else
+            {
+            ModelProgram cac = new Calculation();
+            double sum_perum = cac.calculate(modelprogram.getOmzet(),1);
+            String total = "Rp" + sum_perum;
+            return total;
+            }
+
+    }
+    public String sum_Firma (ModelProgram modelprogram){
+            if (modelprogram.getYear() < 6)
+            {
+            ModelProgram cac = new Calculation();
+            double sum_firma = cac.calculate(modelprogram.getOmzet(), fin);
+            String total = "Rp" + sum_firma;
+            return total;
+            }
+            else
+            {
+            ModelProgram cac = new Calculation();
+            double sum_firma = cac.calculate(modelprogram.getOmzet(),1);
+            String total = "Rp" + sum_firma;
+            return total;
+            }
+
+    }
+
 }

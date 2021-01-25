@@ -91,7 +91,7 @@ public class Login extends javax.swing.JFrame {
         tf_Since.setFont(new java.awt.Font("Century", 0, 14)); // NOI18N
 
         cb_Type.setFont(new java.awt.Font("Century", 0, 14)); // NOI18N
-        cb_Type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Person", "Koperasi", "PT" }));
+        cb_Type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Person", "Koperasi", "PT", "Perum", "Firma" }));
         cb_Type.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cb_TypeActionPerformed(evt);
@@ -216,6 +216,14 @@ public class Login extends javax.swing.JFrame {
             String total = logic.sum_Pt(modelprogram);
             tf_Total.setText(total);
         }
+         else if (a.equals("Perum")) {
+            String total = logic.sum_Perum(modelprogram);
+            tf_Total.setText(total);
+        }
+        else if (a.equals("Firma")) {
+            String total = logic.sum_Firma(modelprogram);
+            tf_Total.setText(total);
+        }
     }//GEN-LAST:event_bt_CalculatedActionPerformed
 
     private void tf_TotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_TotalActionPerformed
@@ -250,11 +258,11 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        //java.awt.EventQueue.invokeLater(new Runnable() {
-        //public void run() {
-        //new Login().setVisible(true);
-        //}
-        //});
+        java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+        new Login().setVisible(true);
+        }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
