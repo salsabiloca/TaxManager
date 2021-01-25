@@ -15,7 +15,7 @@ public class Logic {
 
     
     public String sum_Person (ModelProgram modelprogram){
-            if (modelprogram.getYear() < 7)
+            if (modelprogram.getYear() < 5)
             {
             ModelProgram cac = new Calculation();
             double sum_person = cac.calculate(modelprogram.getOmzet(), fin);
@@ -33,7 +33,7 @@ public class Logic {
     }
     
     public String sum_Koperasi (ModelProgram modelprogram){
-            if (modelprogram.getYear() < 4)
+            if (modelprogram.getYear() < 5)
             {
             ModelProgram cac = new Calculation();
             double sum_koperasi = cac.calculate(modelprogram.getOmzet(), fin);
@@ -52,7 +52,7 @@ public class Logic {
     }
     
     public String sum_Pt (ModelProgram modelprogram){
-            if (modelprogram.getYear() < 3)
+            if (modelprogram.getYear() < 6)
             {
             ModelProgram cac = new Calculation();
             double sum_pt = cac.calculate(modelprogram.getOmzet(), fin);
@@ -70,7 +70,7 @@ public class Logic {
     }
 
      public String sum_Perum (ModelProgram modelprogram){
-            if (modelprogram.getYear() < 5)
+            if (modelprogram.getYear() < 6)
             {
             ModelProgram cac = new Calculation();
             double sum_perum = cac.calculate(modelprogram.getOmzet(), fin);
@@ -87,7 +87,7 @@ public class Logic {
 
     }
     public String sum_Firma (ModelProgram modelprogram){
-            if (modelprogram.getYear() < 6)
+            if (modelprogram.getYear() < 7)
             {
             ModelProgram cac = new Calculation();
             double sum_firma = cac.calculate(modelprogram.getOmzet(), fin);
